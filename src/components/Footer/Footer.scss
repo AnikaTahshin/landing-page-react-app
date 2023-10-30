@@ -21,7 +21,7 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  //   margin-bottom: 5px;
   text-align: left;
 }
 
@@ -35,4 +35,24 @@ a {
 .social {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer_container {
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+  }
+  .container {
+    margin-bottom: 20px;
+  }
+  li {
+    display: block;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
 }
