@@ -1,11 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
-import Home from "./components/Home/Home";
+
 import Profile from "./components/Profile";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
